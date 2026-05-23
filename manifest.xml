@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq/manifest/v1">
+  <iq:application id="com.voicevault.app" version="1.0.0" minSdkVersion="4.0" type="application">
+    <iq:name>VoiceVault</iq:name>
+    <iq:vendor>VoiceVault</iq:vendor>
+    <iq:description>Lightweight secure audio capture for your wrist.</iq:description>
+    <iq:permissions>
+      <iq:permission>Access_Recording</iq:permission>
+      <iq:permission>Access_Storage</iq:permission>
+    </iq:permissions>
+    <iq:languages>
+      <iq:language>en-US</iq:language>
+    </iq:languages>
+    <iq:resources>
+      <iq:resourcePath>resources</iq:resourcePath>
+    </iq:resources>
+    <iq:icons>
+      <iq:iconFile>resources/icon.png</iq:iconFile>
+    </iq:icons>
+    <iq:main>source/app.mc</iq:main>
+  </iq:application>
+</iq:manifest>
