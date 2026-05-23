@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build VoiceVault",
+      "type": "shell",
+      "command": "./build.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "env": {
+        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home",
+        "PATH": "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/bin:${env:PATH}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

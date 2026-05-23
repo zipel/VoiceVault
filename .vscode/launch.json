@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Build VoiceVault",
+      "type": "pwa-node",
+      "request": "launch",
+      "program": "${workspaceFolder}/build.sh",
+      "runtimeExecutable": "/bin/bash",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home",
+        "PATH": "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/bin:${env:PATH}"
+      },
+      "args": [],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}

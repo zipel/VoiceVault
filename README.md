@@ -11,6 +11,15 @@ Quick start
 export CONNECTIQ_HOME="$HOME/connectiq-sdk"
 ```
 
+If your SDK is installed under `~/Library/Application Support/Garmin/ConnectIQ/Sdks`, the build script will detect it automatically.
+
+The Connect IQ compiler is officially tested with Java 8. If your system is using a newer JDK, set `JAVA_HOME` to the installed Azul Java 8 before building:
+
+```bash
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+```
+
 3. Build the app:
 
 ```bash
